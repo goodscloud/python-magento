@@ -13,7 +13,7 @@
     file.
 
     Example usage::
-    
+
         from magento import Customer
         url = 'http://yourmagento.com'
         apiuser = 'apiusername'
@@ -21,9 +21,9 @@
         with Customer(url, apiuser, apipass) as customer_api:
             customer_api.list()
 
-    The implemented methods and APIs are from the Core API of 
-    magento documented here: 
-    
+    The implemented methods and APIs are from the Core API of
+    magento documented here:
+
     http://www.magentocommerce.com/support/magento_core_api
 
 '''
@@ -37,7 +37,7 @@ setup(
     license='GNU Affero General Public License v3',
     author='Sharoon Thomas, Openlabs Technologies',
     author_email='info@openlabs.co.in',
-    description='Magento E-Commerce Integration',
+    description='Magento Core API Client',
     long_description=__doc__,
     packages=['magento'],
     zip_safe=False,
@@ -49,7 +49,7 @@ setup(
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU Affero General Public License v3', 
+        'License :: OSI Approved :: GNU Affero General Public License v3',
         'Operating System :: OS Independent',
         'Programming Language :: Python',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
