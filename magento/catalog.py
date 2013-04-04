@@ -412,6 +412,29 @@ class ProductAttribute(API):
         return bool(self.call('product_attribute.removeOption',
             [attribute, option]))
 
+    def create(self, data):
+        """
+        Create attribute entity.
+
+        :param data: Dictionary of entity data to create attribute with.
+
+        :return: Integer ID of attribute created
+        """
+        return self.call('catalog_product_attribute.create',
+        [attribute, data])
+
+    def update(self, attribute, data):
+        """
+        Update attribute entity data.
+
+        :param attribute: ID or Code of the attribute.
+        :param data: Dictionary of entity data to update on attribute.
+
+        :return: Boolean
+        """
+        return self.call('catalog_product_attribute.update',
+        [attribute, data])
+
 
 class ProductAttributeSet(API):
     """
