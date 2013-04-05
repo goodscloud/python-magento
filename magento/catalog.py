@@ -420,8 +420,7 @@ class ProductAttribute(API):
 
         :return: Integer ID of attribute created
         """
-        return self.call('catalog_product_attribute.create',
-        [attribute, data])
+        return self.call('catalog_product_attribute.create', [data])
 
     def update(self, attribute, data):
         """
