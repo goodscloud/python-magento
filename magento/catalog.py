@@ -431,8 +431,7 @@ class ProductAttribute(API):
 
         :return: Boolean
         """
-        return self.call('catalog_product_attribute.update',
-        [attribute, data])
+        return self.call('catalog_product_attribute.update', [attribute, data])
 
 
 class ProductAttributeSet(API):
